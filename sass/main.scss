@@ -1,0 +1,147 @@
+/* Интегрировал переменные с цветами */
+@import "_colors";
+
+html{
+	font-size: 10px;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+
+	background-color: $body-bg;
+	color: $white;
+	 
+} 
+
+
+.navbar{
+	&-brand{
+		font-size: 4rem;
+	}
+	.nav{
+	&-item{
+		margin-right: 5rem;
+		color: white;
+	}
+	&-btn{
+		width: 100px;
+		height: 2em;
+		color: white;
+		background-color: $nav-btn;
+
+		border: none;
+		border-radius: 30px;
+
+	}
+}
+}
+
+
+.popular-news{
+
+	width: 100%;
+		&__content{
+			width: 100%;
+			height: 70vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-y: 75%;
+		}
+
+		&__list{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20vh;
+			h1{
+				font-size: 7vh;
+				text-align: center;
+				text-shadow: black 1px 0 10px;
+			}
+			button{
+				width: 17vh;
+				height: 5vh;
+
+				font-size: 2vh;
+				font-weight: bold;
+
+				background-color: #05325e;
+				color: #fff;
+
+				border: none;
+				border-radius: 30px;
+				box-shadow: 0px  5px 15px black;
+			}
+		}
+}
+
+.slick-dots{
+	margin-bottom: 30px;
+
+}
+
+.popular-models{
+	margin-top: 35px;
+	margin-bottom: 70px;
+	&__title{
+		margin-left: 98px;
+		font-size: 32px;
+		font-weight: lighter;
+	}
+	&__list{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	&__item{
+		min-width: 165px;
+		height: 145px;
+		
+		margin: 0 15px;
+		margin-top: 30px;
+
+		background-color: #fff;
+	}
+}
+
+
+.dealer{
+	&__title{
+		font-size: 32px;
+		line-height: 36px;
+	}
+	&__subtitle p{
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+	}
+	&__subtitle p:first-child{
+		margin-top: 1.9rem;
+
+		color: #b4b4b4;
+	}
+	&__subtitle p:last-child{
+		margin-top: 1.5rem;
+		color: #7a7a7a;
+		
+	}
+}
+.footer{
+	width: 100%;
+	height: 6em;
+
+	margin-top: 60px;
+
+	background-color: $footer-bg;
+	p{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@import "media";

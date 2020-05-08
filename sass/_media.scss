@@ -1,0 +1,32 @@
+/* Адаптив сайта */
+
+@media(max-width: 760px){
+
+.popular-models{
+	&__title{
+		display: block;
+		text-align: center;
+
+		margin-left: 0;
+	}
+	&__list{
+		flex-wrap: wrap;
+	}
+}
+}
+
+@media(max-width: 1200px){
+
+.dealer{
+	&__address{
+		text-align: center;
+	}
+	&__map{
+		display: flex;
+		justify-content: center;
+
+		margin-top: 30px;
+	}
+
+}
+}
