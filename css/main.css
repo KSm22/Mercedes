@@ -125,6 +125,10 @@ body {
   color: #7a7a7a;
 }
 
+.auto {
+  margin-top: 20px;
+}
+
 .left-sidebar {
   border: none;
   margin-bottom: 15px;
@@ -195,6 +199,86 @@ body {
   width: 13rem;
 }
 
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+.product .product-photo {
+  position: relative;
+  width: 100%;
+}
+.product .three-d__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  color: red;
+}
+.product .three-d__btn img {
+  width: 40px;
+}
+
+.modal-threed {
+  display: none;
+}
+
+.modal-threed--active {
+  display: block;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 32, 33, 0.8);
+}
+.modal-threed--active .modal-img {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #56524f;
+}
+.modal-threed--active button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal-threed--active button img {
+  width: 60px;
+}
+
+.feature .feature-table {
+  text-align: right;
+  width: 100%;
+}
+.feature .feature-table td {
+  padding: 25px 0;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  background-color: #7c7c7c;
+  text-align: center;
+}
+.feature .feature-table th {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.feature .feature-table th:first-child {
+  text-align: left;
+}
+.feature .feature-table th:last-child {
+  text-align: right;
+}
+.feature .feature-table td:first-child {
+  padding-left: 10px;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
 .footer {
   width: 100%;
   height: 6em;
@@ -221,6 +305,10 @@ body {
   .card-list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .feature {
+    overflow: scroll;
   }
 }
 @media (max-width: 1200px) {

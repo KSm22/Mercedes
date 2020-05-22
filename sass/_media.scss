@@ -17,6 +17,10 @@
 .card-list{
 	justify-content: space-around;
 }
+
+.feature{
+	overflow: scroll;
+}
 }
 
 @media(max-width: 1200px){

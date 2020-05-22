@@ -134,6 +134,10 @@ body{
 	}
 }
 
+.auto{
+	margin-top: 20px;
+}
+
 .left-sidebar{
 	border: none;
 	margin-bottom: 15px;
@@ -205,6 +209,89 @@ body{
 	}
 }
 
+.product{
+	display: flex;
+	justify-content: space-around;
+
+	margin-top: 20px;
+	
+	.product-photo{
+		position: relative;
+		width: 100%;
+		.fotorama{
+		}
+	}
+	.three-d__btn{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		color: red;
+		img{
+			width: 40px;
+		}
+	}
+}
+
+.modal-threed{
+	display: none;
+}
+
+.modal-threed--active{
+		display: block;
+		z-index: 10;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;	 
+		background-color: rgba(31, 32, 33, 0.8);
+		.modal-img{
+			 max-width: 800px;
+     		 margin: 30px auto;
+     		 background-color: #56524f;
+		}	
+		 button{
+     		 	position: absolute;
+     		 	right: 0;
+     		 	top: 0;
+     		 	img{
+     		 		width: 60px;
+     		 	}
+     		 }
+	}
+
+.feature{
+	.feature-table{
+		text-align: right;
+		width: 100%;
+		td{
+			 padding: 25px 0;
+			 font-size: 1.6rem;
+			 font-weight: lighter;
+			 background-color: #7c7c7c;
+			 text-align: center;
+
+		}
+		th{
+			text-align: center;
+			font-size: 1.8rem;
+			font-weight: normal;
+		}
+		th:first-child{
+			text-align: left;
+		}
+		th:last-child{
+			text-align: right;
+		}
+		td:first-child{
+			padding-left: 10px;
+			text-align: left;
+			font-size: 1.8rem;
+			font-weight: normal;
+		}
+	}
+}
 
 
 
