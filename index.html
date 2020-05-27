@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="slick/slick-theme.css">
 		<link rel="stylesheet" href="slick/slick.css">
 
+		<!-- Brazzers-Carousel -->
+		<link rel="stylesheet" href="libs/Brazzers-Carousel/jQuery.Brazzers-Carousel.min.css">
+
 		
 		<link href="css/main.css" rel="stylesheet">
 	</head>
@@ -56,7 +59,7 @@
 		</div>
 
 		<div class="popular-news">
-			<div class="popular-news__content" style="background-image: url('img/mb1.jpg');">
+			<div class="popular-news__content" style="background-image: url('img/intro-slide.jpg');">
 				<div class="container">
 					<div class="popular-news__list">
 						<h1 class="popular-news__title">
@@ -91,10 +94,41 @@
 			<div class="popular-models">
 				<span class="popular-models__title">Популярные модели</span>
 				<div class="row popular-models__list">
-						<div class="popular-models__item"><a href=""><img src="" alt=""></a></div>
-						<div class="popular-models__item"><a href=""><img src="" alt=""></a></div>
-						<div class="popular-models__item"><a href=""><img src="" alt=""></a></div>
-						<div class="popular-models__item"><a href=""><img src="" alt=""></a></div>
+							<span class="popular-models__item thumb-item">
+								<img src="img/gle/1.jpg" alt="Alt">
+								<img src="img/gle/2.jpg" alt="Alt">
+								<img src="img/gle/3.jpg" alt="Alt">
+								<div class="popular-models__subtitle">
+									<a class="link" href="">Mercedes GLE</a>
+								</div>
+							</span>
+
+							<span class="popular-models__item thumb-item">
+								<img src="img/gle/1.jpg" alt="Alt">
+								<img src="img/gle/2.jpg" alt="Alt">
+								<img src="img/gle/3.jpg" alt="Alt">
+								<div class="popular-models__subtitle">
+									<a href="">Mercedes GLE</a>
+								</div>
+							</span>
+
+							<span class="popular-models__item thumb-item">
+								<img src="img/gle/1.jpg" alt="Alt">
+								<img src="img/gle/2.jpg" alt="Alt">
+								<img src="img/gle/3.jpg" alt="Alt">
+								<div class="popular-models__subtitle">
+									<a href="">Mercedes GLE</a>
+								</div>
+							</span>
+
+							<span class="popular-models__item thumb-item">
+								<img src="img/gle/1.jpg" alt="Alt">
+								<img src="img/gle/2.jpg" alt="Alt">
+								<img src="img/gle/3.jpg" alt="Alt">
+								<div class="popular-models__subtitle">
+									<a href="">Mercedes GLE</a>
+								</div>
+							</span>
 				</div>
 			</div>
 
@@ -137,6 +171,7 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="libs/Brazzers-Carousel/jQuery.Brazzers-Carousel.min.js"></script>
 
 		<script src="slick/slick.js"></script>
 		<script>
@@ -146,6 +181,8 @@
 				slidesToShow: 1,
 				slidesToScroll: 1
 			});
+
+			$(".thumb-item").brazzersCarousel();
 		</script>
 
 	</body>
