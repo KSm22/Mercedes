@@ -33,6 +33,13 @@
 		flex-direction: column;
 	}
 }
+
+.news{
+	&__list{
+		flex-direction: column;
+	}
+}
+
 }
 
 @media(max-width: 1200px){
@@ -48,13 +55,23 @@
 		margin-top: 30px;
 	}
 }
-.news{
 
-	&__list{
-		justify-content: space-around;
+.news{
+	&__item{
+		flex-direction: column;
 	}
-	&__main{
-		height: 250px;
+	&__img-wrapper{
+		margin-left: 15px;
+		height: 150px;
+		img{
+			width: 700px;
+			transform: translateY(-20%);
+			transform: translatex(-17%);
+		}
+	}
+	&__content{
+		margin-top: 15px;
+		text-align: center;
 	}
 }
 }
