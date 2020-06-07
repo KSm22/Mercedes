@@ -2,7 +2,8 @@
 /* Интегрировал переменные с цветами */
 /* Обозначил основные цвета */
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  height: 100%; }
 
 body {
   padding: 0;
@@ -10,7 +11,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #1f2021;
-  color: #ffffff; }
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+main {
+  flex: 1 0 auto; }
 
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important; }
@@ -254,7 +261,8 @@ button, button:visited, button:focus, button:active, button:hover {
   width: 100%;
   height: 6em;
   margin-top: 60px;
-  background-color: #191a1b; }
+  background-color: #191a1b;
+  flex-shrink: 0; }
   .footer p {
     display: block;
     margin: 0 auto; }

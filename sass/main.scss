@@ -3,6 +3,7 @@
 
 html{
 	font-size: 10px;
+	height: 100%;
 }
 
 body{
@@ -14,8 +15,16 @@ body{
 
 	background-color: $body-bg;
 	color: $white;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	 
 } 
+
+main{
+	flex: 1 0 auto;
+}
 
 button, button:visited, button:focus, button:active, button:hover{
     outline:0 none !important;
@@ -370,6 +379,8 @@ button, button:visited, button:focus, button:active, button:hover{
 	margin-top: 60px;
 
 	background-color: $footer-bg;
+
+	flex-shrink: 0;
 	p{
 		display: block;
 		margin: 0 auto;
